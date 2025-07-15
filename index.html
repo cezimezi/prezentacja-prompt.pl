@@ -1,165 +1,142 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="utf-8">
+<title>prompt.pl – prezentacja</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html,body{margin:0;padding:0;height:100%;font-family:'Segoe UI',Tahoma,sans-serif;background:#111;color:#eee;overflow:hidden}
+.deck{position:relative;width:100%;height:100%}
+.slide{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;box-sizing:border-box;transition:transform .6s ease;transform:translateX(100%)}
+.slide.active{transform:translateX(0)}
+h1{font-size:2.8em;margin:.2em 0;color:#0ff}
+h2{font-size:2.2em;color:#0ff}
+p,li{font-size:1.4em;line-height:1.4em;margin:.4em 0}
+ul{max-width:700px;text-align:left}
+.nav{position:absolute;bottom:20px;left:0;right:0;display:flex;justify-content:center;gap:20px}
+.nav button{background:#0ff;color:#111;border:none;border-radius:50%;width:44px;height:44px;font-size:24px;cursor:pointer}
+.logo{font-size:4em;font-weight:700;color:#0ff}
+.green{color:#0f0}
+.note{font-size:1em;color:#aaa;margin-top:2em}
+</style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="pl"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;title&gt;prompt.pl – prezentacja&lt;/title&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>html,body{margin:0;padding:0;height:100%;font-family:'Segoe UI',Tahoma,sans-serif;background:#111;color:#eee;overflow:hidden}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.deck{position:relative;width:100%;height:100%}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.slide{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;box-sizing:border-box;transition:transform .6s ease;transform:translateX(100%)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.slide.active{transform:translateX(0)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>h1{font-size:2.8em;margin:.2em 0;color:#0ff}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>h2{font-size:2.2em;color:#0ff}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>p,li{font-size:1.4em;line-height:1.4em;margin:.4em 0}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>ul{max-width:700px;text-align:left}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.nav{position:absolute;bottom:20px;left:0;right:0;display:flex;justify-content:center;gap:20px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.nav button{background:#0ff;color:#111;border:none;border-radius:50%;width:44px;height:44px;font-size:24px;cursor:pointer}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.logo{font-size:4em;font-weight:700;color:#0ff}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.green{color:#0f0}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.note{font-size:1em;color:#aaa;margin-top:2em}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="deck" id="deck"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="logo"&gt;prompt.pl&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Największa polska baza promptów&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Twórz, sprzedawaj, zarabiaj.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Agenda&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Czym jest prompt.pl&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Dla kogo?&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Jak to działa?&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Korzyści dla twórcy&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Korzyści dla kupującego&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Przykład promptu w akcji&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 3 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Czym jest prompt.pl?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Pierwszy w Polsce marketplace promptów do modeli AI (ChatGPT, Midjourney, Stable Diffusion, LLaMA…).&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="note"&gt;Hostujemy &gt; 8 000 promptów, setki twórców, dziesiątki tysięcy pobrań.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 4 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Dla kogo?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Twórcy promptów&lt;/span&gt; – graficy, copywriterzy, developerzy, marketerzy&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Firmy&lt;/span&gt; – agencje, startupy, działy marketingu&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Pasjonaci AI&lt;/span&gt; – szukają inspiracji i gotowych rozwiązań&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 5 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Jak to działa? (sprzedawca)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Załóż konto (30 s)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Wgraj prompt + opis + miniaturkę&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Ustal cenę (PLN, USD, EUR)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Otrzymujesz 70 % z każdej sprzedaży&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Wypłata codziennie na PayPal / BLIK / konto&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 6 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Jak to działa? (kupujący)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Wyszukaj prompt po kategorii / tagu&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Kup „zamówieniem 1-klik”&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Pobierz plik natychmiast&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;Udostępniamy historię zakupów&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;14-dniowa gwarancja zwrotu&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 7 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Korzyści dla twórcy&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Pasywny dochód&lt;/span&gt; – sprzedajesz 24/7&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Zero prowizji&lt;/span&gt; od wystawienia&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Analityka&lt;/span&gt; – wykresy, bestsellery, rabaty&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Społeczność&lt;/span&gt; – konkursy, rankingi, wsparcie&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 8 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Korzyści dla kupującego&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Oszczędność czasu&lt;/span&gt; – gotowe, przetestowane skrypty&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Jakość&lt;/span&gt; – recenzje, gwiazdki, próbki&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Licencja&lt;/span&gt; – używasz komercyjnie&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;span class="green"&gt;Aktualizacje&lt;/span&gt; – autor może wypuszczać v2, v3…&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 9 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Przykład w akcji&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;Prompt:&lt;/strong&gt; „Generuj opis produktu e-commerce w stylu premium, 120 słów, język polski”&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;Efekt:&lt;/strong&gt; 12-sekundowy tekst gotowy do Allegro / Amazon → 3 zł / użycie&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="note"&gt;Autor zarobił już 1 840 zł z jednego promptu!&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 10 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="slide"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Dołącz teraz&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="green"&gt;prompt.pl&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;⇢ Zarejestruj się za darmo&lt;br&gt;⇢ Wystaw pierwszy prompt w 3 minuty&lt;br&gt;⇢ Zacznij zarabiać już dziś&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="note"&gt;Dziękuję!&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="nav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="prev()"&gt;‹&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;span id="counter"&gt;1 / 10&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="next()"&gt;›&lt;/button&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">let idx = 0;</p>
-<p class="p1">const slides = document.querySelectorAll('.slide');</p>
-<p class="p1">const counter = document.getElementById('counter');</p>
-<p class="p1">function show(i){</p>
-<p class="p1"><span class="Apple-converted-space">  </span>slides.forEach((s,n)=&gt;s.classList.toggle('active',n===i));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>counter.textContent = `${i+1} / ${slides.length}`;</p>
-<p class="p1">}</p>
-<p class="p1">function next(){idx=(idx+1)%slides.length;show(idx);}</p>
-<p class="p1">function prev(){idx=(idx-1+slides.length)%slides.length;show(idx);}</p>
-<p class="p1">document.addEventListener('keydown',e=&gt;{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if(e.key==='ArrowRight') next();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if(e.key==='ArrowLeft') prev();</p>
-<p class="p1">});</p>
-<p class="p1">show(0);</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<div class="deck" id="deck">
+  <!-- 1 -->
+  <section class="slide active">
+    <div class="logo">prompt.pl</div>
+    <h1>Największa polska baza promptów</h1>
+    <p>Twórz, sprzedawaj, zarabiaj.</p>
+  </section>
+
+  <!-- 2 -->
+  <section class="slide">
+    <h2>Agenda</h2>
+    <ul>
+      <li>Czym jest prompt.pl</li>
+      <li>Dla kogo?</li>
+      <li>Jak to działa?</li>
+      <li>Korzyści dla twórcy</li>
+      <li>Korzyści dla kupującego</li>
+      <li>Przykład promptu w akcji</li>
+    </ul>
+  </section>
+
+  <!-- 3 -->
+  <section class="slide">
+    <h2>Czym jest prompt.pl?</h2>
+    <p>Pierwszy w Polsce marketplace promptów do modeli AI.</p>
+    <p class="note">Hostujemy > 8 000 promptów, setki twórców.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="slide">
+    <h2>Dla kogo?</h2>
+    <ul>
+      <li><span class="green">Twórcy promptów</span> – graficy, copywriterzy, developerzy</li>
+      <li><span class="green">Firmy</span> – agencje, startupy</li>
+      <li><span class="green">Pasjonaci AI</span></li>
+    </ul>
+  </section>
+
+  <!-- 5 -->
+  <section class="slide">
+    <h2>Jak to działa? (sprzedawca)</h2>
+    <ol>
+      <li>Załóż konto (30 s)</li>
+      <li>Wgraj prompt + opis</li>
+      <li>Ustal cenę</li>
+      <li>Otrzymujesz 70 % z każdej sprzedaży</li>
+    </ol>
+  </section>
+
+  <!-- 6 -->
+  <section class="slide">
+    <h2>Jak to działa? (kupujący)</h2>
+    <ol>
+      <li>Wyszukaj prompt</li>
+      <li>Kup „1-klik”</li>
+      <li>Pobierz natychmiast</li>
+    </ol>
+  </section>
+
+  <!-- 7 -->
+  <section class="slide">
+    <h2>Korzyści dla twórcy</h2>
+    <ul>
+      <li><span class="green">Pasywny dochód</span></li>
+      <li><span class="green">Zero prowizji</span> od wystawienia</li>
+      <li><span class="green">Analityka</span></li>
+    </ul>
+  </section>
+
+  <!-- 8 -->
+  <section class="slide">
+    <h2>Korzyści dla kupującego</h2>
+    <ul>
+      <li><span class="green">Oszczędność czasu</span></li>
+      <li><span class="green">Gotowe, przetestowane skrypty</span></li>
+      <li><span class="green">Licencja komercyjna</span></li>
+    </ul>
+  </section>
+
+  <!-- 9 -->
+  <section class="slide">
+    <h2>Przykład w akcji</h2>
+    <p><strong>Prompt:</strong> „Generuj opis produktu premium, 120 słów, PL”</p>
+    <p class="note">Autor zarobił 1 840 zł z jednego promptu!</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="slide">
+    <h2>Dołącz teraz</h2>
+    <p class="green">prompt.pl</p>
+    <p>Zarejestruj się za darmo i zarabiaj!</p>
+  </section>
+</div>
+
+<div class="nav">
+  <button onclick="prev()">‹</button>
+  <span id="counter">1 / 10</span>
+  <button onclick="next()">›</button>
+</div>
+
+<script>
+let idx = 0;
+const slides = document.querySelectorAll('.slide');
+const counter = document.getElementById('counter');
+function show(i){
+  slides.forEach((s,n)=>s.classList.toggle('active', n===i));
+  counter.textContent = `${i+1} / ${slides.length}`;
+}
+function next(){ idx = (idx+1) % slides.length; show(idx); }
+function prev(){ idx = (idx-1+slides.length) % slides.length; show(idx); }
+document.addEventListener('keydown', e=>{
+  if(e.key==='ArrowRight') next();
+  if(e.key==='ArrowLeft') prev();
+});
+show(0);
+</script>
 </body>
 </html>
